@@ -21,6 +21,8 @@ import {
 } from "../composables/usePersistentFiles";
 import { useEditorSettings } from "../composables/useEditorSettings";
 
+import { initVimMode } from 'monaco-vim';
+
 const { isDark } = useData();
 
 const theme = computed(() => (isDark.value ? "vs-dark" : "vs"));
@@ -106,6 +108,7 @@ function beforeMount(monaco: Monaco) {
 }
 
 function onMount(editor: monaco.editor.IStandaloneCodeEditor) {
+  initVimMode(editor);
   editorRef.value = editor;
 }
 function onOutMount(editor: monaco.editor.IStandaloneCodeEditor) {
