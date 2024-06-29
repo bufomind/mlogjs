@@ -4,7 +4,7 @@ Vim bindings for the mlogjs editor.
 
 Added https://github.com/brijeshb42/monaco-vim in a hacky way. It is default and can't be disabled. No status bar.
 
-Added Dockerfile and docker-compose file so I don't have to taint my server with Javascript crap. Not a well put together image; building the website was not working so it runs in dev mode (doesn't seem to be very taxing on cpu).
+Added Dockerfile and docker-compose file so I don't have to taint my server with Javascript. Not a well put together image; building the website was not working so it runs in dev mode (doesn't seem to be very taxing on cpu).
 
 Otherwise the site is running up to date with the official website and seems to function as intended!
 
